@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: url('/img/mainfon2.png');
+}
+
+.top {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  font-size: 50px;
+  text-align: center;
+  background-color: #fff;
+}
+
+
+.maintext {
+  padding-top: 50px;
+  padding-left: 20px;
+  font-size: 20px;
+  text-indent: 25px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.maintext ol {
+  margin-left: 25px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+
+.container {
+  display: flex;
+
+}
+
+.sidebar {
+  width: 306px;
+  height: 50px;
+  background: white;
+
+
+}
+
+.sidebar_logo {
+  width: 250px;
+  height: 100%;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+}
+
+.kartinka-wrap {
+  width: 100%;
+  text-align: center;
+}
+
+.kartinka {
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#accordion {
+  position: fixed;
+  max-width: 254px;
+}
+
+#accordion input {
+  display: none;
+}
+
+#accordion label {
+  background: #eee;
+  border-radius: .25em;
+  cursor: pointer;
+  display: block;
+  margin-bottom: .125em;
+  padding: .25em 1em;
+  z-index: 20;
+}
+
+#accordion label:hover {
+  background: #ccc;
+}
+
+#accordion input:checked+label {
+  background: #ccc;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  color: white;
+  margin-bottom: 0;
+}
+
+#accordion article {
+  background: #f7f7f7;
+  height: 0px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#accordion article p {
+  text-align: right;
+  text-decoration: underline;
+  padding: 1em;
+}
+
+#accordion input:checked article {}
+
+#accordion input:checked~article {
+  border-bottom-left-radius: .25em;
+  border-bottom-right-radius: .25em;
+  height: auto;
+  margin-bottom: .125em;
+}
+
+thead {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  text-align: center;
+  border: 1px solid black;
+  max-width: fit-content;
+}
+
+.white {
+  background-color: #fff;
+}
